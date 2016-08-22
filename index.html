@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="CheckInput.js" defer></script>
+		<meta charset="utf-8">
+		<title> Team Form </title>
+	</head>
+	<body>
+		<div class="FormCheckTeamHeadContainer">
+			<h1 class="HeaderText">
+				Front and Developer - Team check form
+			</h1>
+			<form id="FormCheckTeam" action="CheckInput.js" method="post">
+				<div class="FormCheckTeamLeft">
+					<label class="FormCheckTeamName" for="firstMemberTeam">
+						Enter a first member of the team
+					</label>
+					<input class="FormCheckTeamNameInputText" type="text" name="firstMemberTeam" value="Хиневич Юрий" id="firstMemberTeam">
+					<label class="FormCheckTeamName" for="secondMemberTeam">
+						Enter a second member of the team
+					</label>
+					<input class="FormCheckTeamNameInputText" type="text" name="secondMemberTeam" value="Позняк БогдаН" id="secondMemberTeam">
+					<label class="FormCheckTeamName" for="thirdMemberTeam">
+						Enter a third member of the team
+					</label>
+					<input class="FormCheckTeamNameInputText" type="text" name="thirdMemberTeam" value="Капуза артур" id="thirdMemberTeam">
+				</div>
+				<div class="FormCheckTeamRight">
+					<label class="FormCheckTeamName" for="fourthMemberTeam">
+						Enter a fourth member of the team
+					</label>
+					<input class="FormCheckTeamNameInputText" type="text" name="fourthMemberTeam" value="Майорчик" id="fourthMemberTeam">
+					<label class="FormCheckTeamName" for="fifthMemberTeam">
+						Enter a fifth member of the team
+					</label>
+					<input class="FormCheckTeamNameInputText" type="text" name="fifthMemberTeam" value="ГЛОБА евгений" id="fifthMemberTeam">
+					<label class="FormCheckTeamName" for="sixthMemberTeam">
+						Enter a sixth member of the team
+					</label>
+					<input class="FormCheckTeamNameInputText" type="text" name="sixthMemberTeam" value="Волчек Дмитрий" id="sixthMemberTeam">
+				</div>
+				<div id="resultOutputArea">
+				</div>
+				<input type="reset" class="ResetButton" onclick="ClearForm()">
+				<input type="button" class="CheckRepeatButton" value="Check" onclick="CheckInput()">
+			</form>
+		</div>
+	</body>
+</html>
