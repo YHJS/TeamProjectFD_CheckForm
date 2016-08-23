@@ -10,37 +10,37 @@ var firstMember,
     fifthMember,
     sixthMember;
  
-    if (FormCheckTeam.firstMemberTeam.value.toLowerCase()  == 'хиневич' || FormCheckTeam.firstMemberTeam.value.toLowerCase()  == 'хиневич юрий')
+    if (FormCheckTeam.firstMemberTeam.value.toLowerCase().trim()  == 'хиневич' || FormCheckTeam.firstMemberTeam.value.toLowerCase().trim()  == 'хиневич юрий')
     {firstMember = 'Хиневич Юрий'}
-    else {firstMember = 'этот человек не из нащей комманды, проверьте правильность ввода ФИО' }
+    else {firstMember = 'этот человек не из нашей комманды, проверьте правильность ввода фамилии и имени' }
 
-    if (FormCheckTeam.secondMemberTeam.value.toLowerCase() == 'позняк' || FormCheckTeam.secondMemberTeam.value.toLowerCase() == 'позняк богдан')
+    if (FormCheckTeam.secondMemberTeam.value.toLowerCase().trim() == 'позняк' || FormCheckTeam.secondMemberTeam.value.toLowerCase() == 'позняк богдан')
     {secondMember = 'Позняк Богдан'}
-    else {secondMember = 'этот человек не из нащей комманды, проверьте правильность ввода ФИО' }
+    else {secondMember = 'этот человек не из нашей комманды, проверьте правильность ввода фамилии и имени' }
 
-    if (FormCheckTeam.thirdMemberTeam.value.toLowerCase() == 'капуза' || FormCheckTeam.thirdMemberTeam.value.toLowerCase() == 'капуза артур')
+    if (FormCheckTeam.thirdMemberTeam.value.toLowerCase().trim() == 'капуза' || FormCheckTeam.thirdMemberTeam.value.toLowerCase() == 'капуза артур')
     {thirdMember = 'Капуза Артур'}
-    else {thirdMember = 'этот человек не из нащей комманды, проверьте правильность ввода ФИО' }
+    else {thirdMember = 'этот человек не из нашей комманды, проверьте правильность ввода фамилии и имени' }
 
-    if (FormCheckTeam.fourthMemberTeam.value.toLowerCase() == 'майорчик' || FormCheckTeam.fourthMemberTeam.value.toLowerCase() == 'майорчик егор')
+    if (FormCheckTeam.fourthMemberTeam.value.toLowerCase().trim() == 'майорчик' || FormCheckTeam.fourthMemberTeam.value.toLowerCase() == 'майорчик егор')
     {fourthMember = 'Майорчик Егор'}
-    else {fourthMember = 'этот человек не из нащей комманды, проверьте правильность ввода ФИО' }
+    else {fourthMember = 'этот человек не из нашей комманды, проверьте правильность ввода фамилии и имени' }
 
-    if (FormCheckTeam.fifthMemberTeam.value.toLowerCase() == 'глоба' || FormCheckTeam.fifthMemberTeam.value.toLowerCase() == 'глоба евгений')
+    if (FormCheckTeam.fifthMemberTeam.value.toLowerCase().trim() == 'глоба' || FormCheckTeam.fifthMemberTeam.value.toLowerCase() == 'глоба евгений')
     {fifthMember = 'Глоба Евгений'}
-    else {fifthMember = 'этот человек не из нащей комманды, проверьте правильность ввода ФИО' }
+    else {fifthMember = 'этот человек не из нашей комманды, проверьте правильность ввода фамилии и имени' }
 
-    if (FormCheckTeam.sixthMemberTeam.value.toLowerCase() == 'волчек' || FormCheckTeam.sixthMemberTeam.value.toLowerCase() == 'волчек дмитрий')
+    if (FormCheckTeam.sixthMemberTeam.value.toLowerCase().trim() == 'волчек' || FormCheckTeam.sixthMemberTeam.value.toLowerCase() == 'волчек дмитрий')
     {sixthMember = 'Волчек Дмитрий'}
-    else {sixthMember = 'этот человек не из нащей комманды, проверьте правильность ввода ФИО' }
+    else {sixthMember = 'этот человек не из нашей комманды, проверьте правильность ввода фамилии и имени' }
     
-    resultOutputArea.innerHTML = 'Результат:'+ '<br>'+
-        '1.' + firstMember  +  '<br>' +
-        '2.' + secondMember +  '<br>' +
-        '3.' + thirdMember  +  '<br>' + 
-        '4.' + fourthMember +  '<br>' + 
-        '5.' + fifthMember  +  '<br>' + 
-        '6.' + sixthMember;
+    resultOutputArea.innerHTML =
+        '1. ' + firstMember  +  '<br>' +
+        '2. ' + secondMember +  '<br>' +
+        '3. ' + thirdMember  +  '<br>' +
+        '4. ' + fourthMember +  '<br>' +
+        '5. ' + fifthMember  +  '<br>' +
+        '6. ' + sixthMember;
 }
 
 function ClearForm() {
